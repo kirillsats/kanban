@@ -1,69 +1,28 @@
- Töö planeerimine Trello abil ja veebilehe arendus
-1. Trello kasutamine töö planeerimiseks
-✅ Scrum-i jaoks loodud nimekirjad:
-Product Backlog
+Üldine kirjeldus
+Pakkide Jälgimise Süsteem on lihtne C# konsoolirakendus, mille abil saab hallata logistikaga seotud pakke. Rakendus võimaldab kasutajal lisada pakke, muuta nende staatust, otsida neid aadressi või staatuse järgi, kuvada statistikat ning eksportida andmeid tekstifaili. Süsteem hoiab ära korduvate ID-de lisamise.
 
-Sprint Backlog
+Funktsionaalsus
+Lisa pakk – lisab uue paki unikaalse ID, aadressi ja staatusega „vastu võetud“.
 
-In Progress
+Muuda staatust – võimaldab muuta olemasoleva paki staatust ("vastu võetud", "teel", "kohale toimetatud").
 
-Done
+Näita pakke staatuse järgi – kuvab ainult need pakid, mille staatus vastab sisestatud väärtusele.
 
-✅ Kanban-i jaoks loodud nimekirjad:
-Backlog
+Otsi aadressi järgi – kuvab kõik pakid, mille aadress sisaldab otsitavat fraasi.
 
-To Do
+Statistika – kuvab, mitu pakki on igas staatuse kategoorias.
 
-In Progress (limiit: maksimaalselt 3 ülesannet korraga)
+Kustuta pakk – eemaldab valitud paki süsteemist ID alusel.
 
-Done
+Ekspordi andmed – salvestab kõik pakid tekstifaili pakkide_andmed.txt.
 
-2. Ülesannete keerukuse hindamine
-✅ Scrum-i jaoks on kasutatud Story Points meetodit:
-Ülesanne	Story Points
-Kujunda veebilehe struktuur	3p
-Lisa stiilid (CSS)	3p
-Projektide sektsioon	2p
-Lisa kontaktivorm	2p
-Responsiivne disain	3p
+Kasutusjuhend
+Käivita rakendus Visual Studio või käsurealt.
 
-✅ Kanban-i jaoks on määratud tööaja hinnang:
-Ülesanne	Aeg
-Kujunda veebilehe struktuur	1h
-Lisa CSS-disain	1.5h
-Projektide sektsioon	1h
-Lisa kontaktivorm	1.5h
-Responsiivne kujundus	2h
+Peamenüüst vali number vastavalt soovitud tegevusele.
 
-3. Töökorraldus Scrum-is ja Kanban-is
-🌀 Scrum:
-Sprindi pikkus: 2 nädalat
+Sisesta vajalikud andmed (ID, aadress, uus staatus jms).
 
-Tööd viiakse läbi iteratiivselt (iga sprint sisaldab konkreetseid ülesandeid)
+Kontrolli, et sisestatud ID oleks unikaalne.
 
-📊 Kanban:
-Järjestikune tööprotsess
-
-"In Progress" nimekirjas maksimaalselt 3 aktiivset ülesannet
-
-4. Ülesannete kirjeldused
-Ülesanne	Kirjeldus	Oodatav tulemus	Lõpetamise kriteeriumid
-Kujunda veebistruktuur	Loo HTML jaotised: päis, projektid, kontakt, jalus	Töötab loogiline jaotus	Lehel on selgelt eristatavad sektsioonid
-Lisa CSS	Kujunda visuaalne stiil, kasutades musta ja oranži värviskeemi	Stiilne, kontrastne ja loetav disain	Elementidel on ühtne stiil ja värv
-Projektide sektsioon	Lisa 2 projekti kaardina	Näidatud on sinu projektid	Kaartidel on pealkiri ja kirjeldus
-Kontaktivorm	Lisa vorm nime, e-posti ja sõnumi sisestamiseks	Külastajad saavad sõnumeid saata	Vorm on toimiv ja valideeritud
-Responsiivne kujundus	Kohanda leht mobiili ja tahvli jaoks	Leht näeb hea välja igas seadmes	Kujundus ei lagune väiksemates ekraanides
-
-5. Funktsiooni teostamine: veebilehe arendus
-🖥️ Projekt: Portfoolio veebileht
-📁 Struktuur:
-HTML ja CSS failid
-
-Sektsioonid: päis, projektid, kontaktivorm, jalus
-
-✅ Ülesanded Trello’s:
-Paigutatud ülesanded vastavalt Scrum- või Kanban-plaadile
-
-Osa ülesandeid liigutatud In Progress
-
-Valmis funktsionaalsused märgitud Done
+Ekspordi andmed teksti, kui soovid neid salvestada.
